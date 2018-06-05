@@ -258,7 +258,7 @@ def config_callback(config):
       "host": host,
       "port": port,
       "node": node,
-      "url_nodes": "http://"+host+":"+port+"/_node/stats",
+      "url_nodes": "http://"+host+":"+port+"/_nodes/stats",
       "url_cluster_health": "http://"+host+":"+port+"/_cluster/health",
       "url_cluster_stats": "http://"+host+":"+port+"/_cluster/stats",
       "url_daily_index_stats": "http://"+host+":"+port+"/%s/_stats/store",

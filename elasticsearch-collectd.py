@@ -132,14 +132,14 @@ STATS_CLUSTER_HEALTH = {
 
 # Cluster stats
 STATS_CLUSTER_STATS = {
-  "nodes.fs.available_in_bytes": stat("counter", "nodes.fs.available_in_bytes"),
-  "nodes.fs.total_in_bytes": stat("counter", "nodes.fs.total_in_bytes"),
-  "indices.count": stat("counter", "indices.count"),
-  "indices.shards.total": stat("counter", "indices.shards.total"),
-  "indices.shards.primaries": stat("counter", "indices.shards.primaries"),
-  "indices.shards.replication": stat("counter", "indices.shards.replication"),
-  "indices.docs.count": stat("counter", "indices.docs.count"),
-  "indices.docs.deleted": stat("counter", "indices.docs.deleted"),
+  "nodes.fs.available_in_bytes": stat("bytes", "nodes.fs.available_in_bytes"),
+  "nodes.fs.total_in_bytes": stat("bytes", "nodes.fs.total_in_bytes"),
+  "indices.count": stat("gauge", "indices.count"),
+  "indices.shards.total": stat("gauge", "indices.shards.total"),
+  "indices.shards.primaries": stat("gauge", "indices.shards.primaries"),
+  "indices.shards.replication": stat("gauge", "indices.shards.replication"),
+  "indices.docs.count": stat("gauge", "indices.docs.count"),
+  "indices.docs.deleted": stat("gauge", "indices.docs.deleted"),
 }
 
 # Index stats

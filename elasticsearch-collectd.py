@@ -106,7 +106,7 @@ STATS_NODES = {
 }
 
 # Thread pools
-for thread_pool in ["bulk", "fetch_shard_started", "fetch_shard_store", "flush", "force_merge", "generic", "get", "index", "listener", "management", "refresh", "search", "snapshot", "warmer"]:
+for thread_pool in ["analyze", "fetch_shard_started", "fetch_shard_store", "flush", "force_merge", "generic", "get", "index", "listener", "management", "refresh", "search", "snapshot", "warmer", "write"]:
   STATS_NODES["%s.thread_pool."+thread_pool+".threads"] = stat("gauge", "nodes.%s.thread_pool."+thread_pool+".threads")
   STATS_NODES["%s.thread_pool."+thread_pool+".queue"] = stat("gauge", "nodes.%s.thread_pool."+thread_pool+".queue")
   STATS_NODES["%s.thread_pool."+thread_pool+".active"] = stat("gauge", "nodes.%s.thread_pool."+thread_pool+".active")
